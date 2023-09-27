@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(232, 232, 232);
+}
+
+
+/* estilo del nav */
+.logo{
+    cursor: pointer;
+    height: 35px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  20px ;
+    margin: 0 30px;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.menu a:hover{
+    text-decoration: line-through;
+}
+
+.menu a:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
