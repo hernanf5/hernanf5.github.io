@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #EEF5DB;
 }
 
 
@@ -15,10 +14,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding:  20px ; */
     height: 8vh;
-    margin: 0 30px;
+    padding: 0 30px;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    background-color: #fe605593;
+    backdrop-filter: blur(2px);
 }
 
 .navbar-links{
@@ -27,21 +29,20 @@
     justify-content: center;
     list-style: none;
 }
+
+body{
+        background-color: #EEF5DB;
+}
 .menu a {
     text-decoration: none;
     color: black;
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .menu a:hover{
     text-decoration: line-through;
 }
 
-.menu a:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5,
-                inset -4px -4px 12px #ffffff;
-}
 
 /* estilo del header */
 
@@ -67,6 +68,11 @@
 }
 
 /* estilo de la descripcion */
+.description{
+    background-color: aqua;
+    height: 80vh;
+    width: 100%;
+}
 
 .description h2{
     font-size: 4vh;
