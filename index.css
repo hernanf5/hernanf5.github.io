@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #EEF5DB;
+    transition: background-color 1s ease;
 }
 
+.scrolled {
+    background-color: #C7EFCF;
+}
 
 /* estilo del nav */
 .logo{
@@ -30,9 +39,7 @@
     list-style: none;
 }
 
-body{
-        background-color: #EEF5DB;
-}
+
 .menu a {
     text-decoration: none;
     color: black;
@@ -69,12 +76,14 @@ body{
 
 /* estilo de la descripcion */
 .description{
-    background-color: aqua;
     height: 80vh;
-    width: 100%;
+    padding: 2% 5%;
+    margin: 2% 5%;
 }
 
 .description h2{
     font-size: 4vh;
     text-align: center;
+    padding-bottom: 20vh;
+
 }
