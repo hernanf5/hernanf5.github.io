@@ -76,9 +76,8 @@ body {
 
 /* estilo de la descripcion */
 .description{
-    height: 80vh;
+    height: 50vh;
     padding: 2% 5%;
-    margin: 2% 5%;
 }
 
 .description h2{
@@ -86,4 +85,36 @@ body {
     text-align: center;
     padding-bottom: 20vh;
 
+}
+
+h3{
+    font-size: 3vh;
+    padding-bottom: 15px;
+}
+
+/* Estilo del carrusel */
+
+.carrousel{
+    min-height: 800px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image{
+    height: 500px;
+    width: 620px;
+    background-image: url("./assets/agua.jpg");
+    background-size: cover;
+}
+
+.slider{
+    width: 500px;
+}
+
+.previous, .next{
+    margin: 0 25px;
+    cursor: pointer;
 }
