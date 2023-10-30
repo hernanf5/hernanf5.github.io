@@ -4,35 +4,51 @@ const telefono = document.getElementById('telefono');
 const mensaje = document.getElementById('mensaje');
 
 const form = document.getElementById('formulario');
-const alerta = document.getElementById('alerta');
+let alertas = document.getElementById('alertas');
 
 form.addEventListener('submit', (e) => {
+    alertas.innerHTML = '';
     e.preventDefault();
-    let regExp = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
-    let alertas = "";
+    let regExp_mail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
+    let regExp_num = /^\d+$/;
     let mostrarAlertas = false;
     if(nombre.value.length<4){
-        alertas+=`El nombre debe contener al menos 4 caracteres <br>`;
+        let p = document.createElement('p');
+        p.innerHTML = `El nombre debe contener al menos 4 caracteres <br>`;
+        alertas.appendChild(p)
         mostrarAlertas = true;
     }
-    if(!regExp.test(email.value)){
-        alertas+=`El email no es valido <br>`;
+    if(!regExp_mail.test(email.value)){
+        let p = document.createElement('p');
+        p.innerHTML = `El email no es valido <br>`;
+        alertas.appendChild(p)
         mostrarAlertas = true;
+    }
+    if(!regExp_num.test(telefono.value)){
+        let p = document.createElement('p');
+        p.innerHTML = `El numero de telefono contiene caracteres no validos <br>`;
+        alertas.appendChild(p)
+        mostrarAlertas = true;
+
     }
     if(telefono.value.length<8){
-        alertas+=`El telefono debe contener al menos 8 digitos <br>`;
+        let p = document.createElement('p');
+        p.innerHTML = `El telefono debe contener al menos 8 digitos <br>`;
+        alertas.appendChild(p);
         mostrarAlertas = true;
     }
+
     if(mensaje.value.length<10){
-        alertas+=`El mensaje debe contener al menos 10 caracteres <br>`;
+        let p = document.createElement('p');
+        p.innerHTML = `El mensaje debe contener al menos 10 caracteres <br>`;
+        alertas.appendChild(p);
         mostrarAlertas = true;
-    }
-    if(mostrarAlertas){
-        alerta.innerHTML = alertas;
     }
 
     if(!mostrarAlertas){
-        alerta.innerHTML = "Mensaje enviado. Muchas gracias!";
+        let p = document.createElement('p');
+        p.innerHTML = `Mensaje enviado. Muchas gracias!`;
+        alertas.appendChild(p);
         form.reset();
     }
 
