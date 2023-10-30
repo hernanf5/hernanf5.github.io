@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA PIZZA NAPOLITANA</title>
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pizza" width="45" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 21.5c-3.04 0 -5.952 -.714 -8.5 -1.983l8.5 -16.517l8.5 16.517a19.09 19.09 0 0 1 -8.5 1.983z"></path>
+            <path d="M5.38 15.866a14.94 14.94 0 0 0 6.815 1.634a14.944 14.944 0 0 0 6.502 -1.479"></path>
+            <path d="M13 11.01v-.01"></path>
+            <path d="M11 14v-.01"></path>
+        </svg>
+        <div class="menu">
+            <ul class="navbar-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./page2.html">Preparación</a></li>
+                <li><a href="./form.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-form">
+        <div class="video-form">
+            <video src="./assets/form.mp4" autoplay loop muted class="video"/>
+        </div>
+        <div class="form">
+            <form action="">
+                <h2>Escribenos!</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="5" class="textarea"></textarea>
+
+                <button>
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            >
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
