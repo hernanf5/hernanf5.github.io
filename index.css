@@ -118,6 +118,10 @@ h3{
     margin: 0 25px;
     cursor: pointer;
 }
+/* estilo preparacion */
+.content-preparacion{
+    padding: 50px ;
+}
 
 /* estilo form */
 .main-form{
@@ -157,6 +161,15 @@ form h2{
     font-weight: bold;
 
 }
+
+.alertas{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 input, textarea{
     width: 100%;
     border: none;
